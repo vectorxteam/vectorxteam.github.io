@@ -1,1 +1,0 @@
-# vectorxteam.github.io
