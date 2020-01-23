@@ -7,7 +7,7 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -21,6 +21,9 @@
 
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+	<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+	<meta http-equiv="Access-Control-Allow-Headers" content="X-Requested-With" />
 
 	<!-- Seo Demo Specific Stylesheet -->
 	<!-- <link rel="stylesheet" href="css/colors.php?color=FE9603" type="text/css" /> <!-- Theme Color -->
@@ -769,7 +772,7 @@
 										<h4 class="mb-3">Get in Touch</h4>
 										<div class="form-widget">
 											<div class="form-result"></div>
-											<form class="nobottommargin" id="template-contactform" name="template-contactform" action="https://mailto:contact@vectorx.co?Subject=Hello!" method="post">
+											<form class="nobottommargin" id="template-contactform" name="template-contactform" action="https://indrawater.com/send_email_vectorx" method="post">
 												<div class="col_full mb-3">
 													<label for="template-contactform-name">Name:*</label>
 													<input type="text" id="template-contactform-name" name="name" class="form-control input-sm required" value="">
@@ -786,6 +789,10 @@
 													<label for="template-contactform-website">Message:</label>
 													<textarea id="template-contactform-website" name="message" class="form-control input-sm" value=""></textarea>
 												</div>
+												
+												<input type="hidden" name="sender" value="contact@vectorx.co">
+												<input type="hidden" name="recepient" value="sriteja@vectorx.co">
+
 												<div class="col_full nobottommargin" style="color:#0256b0">
 													<button class="button button-rounded btn-block nott ls0 m-0" style="background-color:#0256b0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Apply Now</button>
 												</div>
